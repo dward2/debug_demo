@@ -1,4 +1,4 @@
-import pudb
+# import pudb
 # pudb.set_trace(paused=False)
 
 
@@ -8,8 +8,6 @@ def do_math(in_list, item):
     add = x + y
     subtract = x - y
     multi = x * y
-    if y == 0:
-        pudb.set_trace()
     divi = x / y
     return [add, subtract, multi, divi]
 
