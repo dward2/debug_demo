@@ -26,17 +26,20 @@ def cofunction(x):
         return sin_poly(x)
     else:
         opp_x = 90 - x
-        return cos_poly(opp_x)
+        cos = cos_poly(opp_x)
+        return cos
 
 
 def sin_poly(x):
     x_rad = x * math.pi / 180
-    return x_rad - (x_rad**3) / 6 + (x_rad**5) / 120
+    sin = x_rad - (x_rad**3) / 6 + (x_rad**5) / 120
+    return sin
 
 
 def cos_poly(x):
     x_rad = x * math.pi / 180
-    return 1 - (x_rad**2) / 2 + (x_rad**4) / 24 - (x**6) / 720
+    cos = 1 - (x_rad**2) / 2 + (x_rad**4) / 24 - (x**6) / 720
+    return cos
 
 
 def calc_sin(x):
